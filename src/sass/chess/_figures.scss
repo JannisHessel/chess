@@ -1,0 +1,58 @@
+@import "variables";
+
+.black , .white{
+    width: 3.5vw;
+    height: 3.5vw;
+    color: $warncolor;
+    font-size: 3vw;
+    text-align: center;
+    background-size: cover;
+}
+
+.white.rook {
+    background-image: url("/img/chess/WhiteRook.png");
+}
+
+.white.knight {
+    background-image: url("/img/chess/WhiteKnight.png");
+}
+
+.white.bishop {
+    background-image: url("/img/chess/WhiteBishop.png");
+}
+
+.white.queen {
+    background-image: url("/img/chess/WhiteQueen.png");
+}
+
+.white.king {
+    background-image: url("/img/chess/WhiteKing.png");
+}
+
+.white.pawn {
+    background-image: url("/img/chess/WhitePawn.png");
+}
+
+.black.rook {
+    background-image: url("/img/chess/BlackRook.png");
+}
+
+.black.knight {
+    background-image: url("/img/chess/BlackKnight.png");
+}
+
+.black.bishop {
+    background-image: url("/img/chess/BlackBishop.png");
+}
+
+.black.queen {
+    background-image: url("/img/chess/BlackQueen.png");
+}
+
+.black.king {
+    background-image: url("/img/chess/BlackKing.png");
+}
+
+.black.pawn {
+    background-image: url("/img/chess/BlackPawn.png");
+}

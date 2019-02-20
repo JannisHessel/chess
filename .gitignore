@@ -1,0 +1,12 @@
+#config
+
+node_modules/
+package-lock.json
+yarn.lock
+webpack.config.js
+
+#for checking
+
+
+src/css/
+src/components/chess/testboard.jsx

@@ -1,0 +1,58 @@
+@import "variables";
+
+* {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box; 
+}
+
+.con{
+    width: $boardsize;
+    height: $boardsize;
+    padding:#{$boardsize / 50};
+    display:block;
+    display:grid;
+    grid-template-columns:0.4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows:0.4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.4fr;
+    background-color: $darkbrown;
+    grid-gap: 2px;
+    position:relative;
+    float: left;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $darkfield; 
+    color: $warncolor;
+    font-size: #{$boardsize / 15};
+    text-align:center;
+    &:nth-of-type(2n){
+        background-color: $whitefield; }
+}
+
+.edge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: #{$boardsize / 30};
+    color: $whitefield;
+}
+.none{
+    display:none;
+}
+
+.highlight{
+    background-color: $highlight !important;
+}
+
+.castle-white{
+    background:$highlight url("/img/chess/WhiteRook.png") no-repeat center/1.5vw !important;
+}
+.castle-black{
+    background:$highlight url("/img/chess/BlackRook.png") no-repeat center/1.5vw !important;
+}

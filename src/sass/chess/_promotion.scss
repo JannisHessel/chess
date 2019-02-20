@@ -1,0 +1,34 @@
+@import "variables";
+
+#cover{
+    position:absolute;
+    top:0;
+    left:0;
+    width: $boardsize;
+    height: $boardsize;
+    background-color: rgba(150,150,150,0.2);
+    display:none;
+}
+#promotion{
+    position:absolute;
+    top:#{$boardsize * 3/8};
+    left:#{$boardsize / 5};
+    height:#{$boardsize/4};
+    width:#{$boardsize * 3/5};
+    text-align:center;
+    background-color:rgba(255,255,255,0.3);
+    h2{
+        font-size: #{$boardsize/30};
+    }
+    .choice{
+        justify-content:space-around;
+        display:none;
+        img{
+            height:#{$boardsize / 10};
+            border:2px solid rgba(0,0,0,0);
+            &:hover{
+                border:2px solid $highlight;
+            }
+        }
+    }
+}
