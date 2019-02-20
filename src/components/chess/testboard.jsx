@@ -2,19 +2,10 @@ import React from "react";
 import Promo from "./promo";
 
 class Board extends React.Component {
-
-    constructor () {
-        super();
-        this.state = {
-            turn : "white"
-        }
-    }
-
     render () {
         return (
-            <React.Fragment> 
-
-                <div className="con" id="chess-board">
+            <React.Fragment>       
+                <div className="con">
                     <div className="edge"></div>
                     <div className="edge">A</div>
                     <div className="edge">B</div>
@@ -27,55 +18,39 @@ class Board extends React.Component {
                     <div className="edge"></div>
                     <div className="edge">8</div>
                     <div className="field" id="81">
-                        <div className="black rook"></div>
                     </div>
                     <div className="field" id="82">
-                        <div className="black knight"></div>
                     </div>
                     <div className="field" id="83">
-                        <div className="black bishop"></div>
                     </div>
                     <div className="field" id="84">
-                        <div className="black queen"></div>
                     </div>
                     <div className="field" id="85">
-                        <div className="black king"></div>
                     </div>
                     <div className="field" id="86">
-                        <div className="black bishop"></div>
                     </div>
                     <div className="field" id="87">
-                        <div className="black knight"></div>
                     </div>
                     <div className="field" id="88">
-                        <div className="black rook"></div>
                     </div>
                     <div className="edge">8</div>
                     <div className="none"></div>
                     <div className="edge">7</div>
                     <div className="field" id="71">
-                        <div className="black pawn"></div>
                     </div>
                     <div className="field" id="72">
-                        <div className="black pawn"></div>
                     </div>
                     <div className="field" id="73">
-                        <div className="black pawn"></div>
                     </div>
                     <div className="field" id="74">
-                        <div className="black pawn"></div>
                     </div>
                     <div className="field" id="75">
-                        <div className="black pawn"></div>
                     </div>
                     <div className="field" id="76">
-                        <div className="black pawn"></div>
                     </div>
                     <div className="field" id="77">
-                        <div className="black pawn"></div>
                     </div>
                     <div className="field" id="78">
-                        <div className="black pawn"></div>
                     </div>
                     <div className="edge">7</div>
                     <div className="none"></div>
@@ -126,56 +101,41 @@ class Board extends React.Component {
                     <div className="none"></div>
                     <div className="edge">2</div>
                     <div className="field" id="21">
-                        <div className="white pawn" draggable="true"></div>
                     </div>
                     <div className="field" id="22">
-                        <div className="white pawn" draggable="true"></div>
                     </div>
                     <div className="field" id="23">
-                        <div className="white pawn" draggable="true"></div>
                     </div>
                     <div className="field" id="24">
-                        <div className="white pawn" draggable="true"></div>
                     </div>
                     <div className="field" id="25">
-                        <div className="white pawn" draggable="true"></div>
                     </div>
                     <div className="field" id="26">
-                        <div className="white pawn" draggable="true"></div>
                     </div>
                     <div className="field" id="27">
-                        <div className="white pawn" draggable="true"></div>
                     </div>
                     <div className="field" id="28">
-                        <div className="white pawn" draggable="true"></div>
                     </div>
                     <div className="edge">2</div>
                     <div className="none"></div>
 
                     <div className="edge">1</div>
                     <div className="field" id="11">
-                        <div className="white rook" draggable="true"></div>
                     </div>
                     <div className="field" id="12">
-                        <div className="white knight" draggable="true"></div>
                     </div>
                     <div className="field" id="13">
-                        <div className="white bishop" draggable="true"></div>
                     </div>
                     <div className="field" id="14">
-                        <div className="white queen" draggable="true"></div>
                     </div>
                     <div className="field" id="15">
                         <div className="white king" draggable="true"></div>
                     </div>
                     <div className="field" id="16">
-                        <div className="white bishop" draggable="true"></div>
                     </div>
                     <div className="field" id="17">
-                        <div className="white knight" draggable="true"></div>
                     </div>
                     <div className="field" id="18">
-                        <div className="white rook" draggable="true"></div>
                     </div>
                     <div className="edge">1</div>
                     <div className="edge"></div>
